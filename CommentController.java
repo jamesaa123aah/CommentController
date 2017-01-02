@@ -71,7 +71,7 @@ public class CommentController {
 		{
 			result.setStatus(Result.FAILED);
 			result.setTipCode("401");
-			result.setTipMsg("Login falied");
+			result.setTipMsg("falied");
 			return result;
 		}
 	   
@@ -106,7 +106,7 @@ public class CommentController {
 	 */
 	
 	@RequestMapping(value = "/comment2",method=RequestMethod.POST)
-	public Result setComment(@ModelAttribute Comment comment,Comment comment2){
+	public Result setComment(@RequestBody Comment comment,Comment comment2){
 		
 		Result result = new Result();
 		
@@ -116,7 +116,7 @@ public class CommentController {
 		{
 			result.setStatus(Result.FAILED);
 			result.setTipCode("400");
-			result.setTipMsg("register falied");
+			result.setTipMsg(" falied");
 			return result;
 		}
 		
