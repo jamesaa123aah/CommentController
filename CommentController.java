@@ -24,13 +24,13 @@ import cn.edu.bjtu.weibo.service.CommentMessageService;
 /**
  * Commentcontroller 
  * 
- * ×Ü¹²ÊµÏÖÁ½¸ö·½·¨£º
+ * æ€»å…±å®ç°ä¸¤ä¸ªæ–¹æ³•ï¼š
  * 
- * 1.ÊµÏÖ·µ»ØºÍ¸ÄÓÃ»§ÓĞ¹ØµÄËùÓĞÆÀÂÛ
- * µ÷ÓÃµÚÒ»¸ö·½·¨µÄurl http://ip:port/c/comment1/
+ * 1.å®ç°è¿”å›å’Œæ”¹ç”¨æˆ·æœ‰å…³çš„æ‰€æœ‰è¯„è®º
+ * è°ƒç”¨ç¬¬ä¸€ä¸ªæ–¹æ³•çš„url http://ip:port/c/comment1/
  * 
- * 2.µ±ÓÃ»§²Ù×÷ÁË£¬½øĞĞÆÀÂÛ£¬½«ÓÃ»§µÄÆÀÂÛ´«ÈëÊı¾İ¿â
- * µ÷ÓÃµÚ¶ş¸ö·½·¨µÄurl http://ip:port/c/comment2/
+ * 2.å½“ç”¨æˆ·æ“ä½œäº†ï¼Œè¿›è¡Œè¯„è®ºï¼Œå°†ç”¨æˆ·çš„è¯„è®ºä¼ å…¥æ•°æ®åº“
+ * è°ƒç”¨ç¬¬äºŒä¸ªæ–¹æ³•çš„url http://ip:port/c/comment2/
  * 
  * @author a
  *
@@ -50,16 +50,16 @@ public class CommentController {
 
 	
 	/**
-	 * »ñÈ¡µ±Ç°Õâ¸öÓÃ»§µÄÆÀÂÛ
+	 * è·å–å½“å‰è¿™ä¸ªç”¨æˆ·çš„è¯„è®º
 	 * 
-	 * ½«»ñÈ¡ºÍÕâ¸öÓÃ»§Ïà¹ØµÄËùÓĞÆÀÂÛ·µ»Ø¸øÇ°¶Ë
+	 * å°†è·å–å’Œè¿™ä¸ªç”¨æˆ·ç›¸å…³çš„æ‰€æœ‰è¯„è®ºè¿”å›ç»™å‰ç«¯
 	 * 
-	 * Ç°¶Ë½âÎöºó£¬Ö±½ÓÕ¹Ê¾¼´¿É
+	 * å‰ç«¯è§£æåï¼Œç›´æ¥å±•ç¤ºå³å¯
 	 * 
-	 * ³É¹¦ºóµÄtipMsg:get comments successfully"
+	 * æˆåŠŸåçš„tipMsg:get comments successfully"
 	 * 
 	 * @param comment
-	 * @return ·µ»ØÒ»¸öResult ¸øÇ°¶Ë
+	 * @return è¿”å›ä¸€ä¸ªResult ç»™å‰ç«¯
 	 */
 	
 	@RequestMapping(value = "/comment1",method=RequestMethod.POST)
@@ -92,17 +92,17 @@ public class CommentController {
 
 	
 	/**
-	 * Ç°¶Ëpost·½·¨	
+	 * å‰ç«¯postæ–¹æ³•	
 	 * 
-	 * Ìá½»ÆÀÂÛÊı¾İµ½ºó¶Ë
+	 * æäº¤è¯„è®ºæ•°æ®åˆ°åç«¯
 	 * 
-	 * ºó¶ËĞ´ÈëÊı¾İ¿â
+	 * åç«¯å†™å…¥æ•°æ®åº“
 	 * 
-	 * ³É¹¦ºóµÄtipMsg:comment success
+	 * æˆåŠŸåçš„tipMsg:comment success
 	 * 
-	 * @param comment ±»ÆÀÂÛµÄÆÀÂÛ
-	 * @param comment2  ´Ë´ÎÆÀÂÛµÄÆÀÂÛ
-	 * @return ·µ»ØÒ»¸öResult¸øÇ°¶Ë
+	 * @param comment è¢«è¯„è®ºçš„è¯„è®º
+	 * @param comment2  æ­¤æ¬¡è¯„è®ºçš„è¯„è®º
+	 * @return è¿”å›ä¸€ä¸ªResultç»™å‰ç«¯
 	 */
 	
 	@RequestMapping(value = "/comment2",method=RequestMethod.POST)
